@@ -40,4 +40,50 @@ Status: Downloaded newer image for dbeaver/cloudbeaver:latest
 
 ```
 
-A la hora de intentar acceder a localhost:8978 se queda cargando la pagina 
+se verifica que el contenedor este corriendo
+
+```code/bash/textplan/console
+docker ps -a
+CONTAINER ID   IMAGE                        COMMAND                  CREATED              STATUS                   PORTS                                       NAMES
+09018787f1a9   dbeaver/cloudbeaver:latest   "./run-server.sh"        6 seconds ago        Up 3 seconds             0.0.0.0:8978->8978/tcp, :::8978->8978/tcp   cloudbeaver
+```
+
+Accedemos a la direccion http://localhost:8978 
+<img src=../img/CLOUDBEAVER1.png>
+
+
+Realizamos la configuracion del cliente
+
+<img src=../img/cloudBeaver2.png>
+
+
+Hacemos una conexion con mariadb
+
+<img src=../img/3.png>
+
+Y verificamos que estamos conectados
+
+<img src=../img/4.png>
+
+
+### Detener y eliminar contenedores
+
+Detenemos y eliminamos los contenedores
+
+
+```code/bash/textplan/console
+
+ docker stop mariadb-container
+    mariadb-container
+ docker stop cloudbeaver
+    cloudbeaver
+ 
+ docker rm mariadb-container
+    mariadb-container
+ docker rm cloudbeaver
+    cloudbeaver
+ docker ps
+    CONTAINER ID   IMAGE                   COMMAND                  CREATED      STATUS             PORTS                                   NAMES
+    fb0a99114c60   phpmyadmin/phpmyadmin   "/docker-entrypoint.…"   6 days ago   Up About an hour   0.0.0.0:8000->80/tcp, :::8000->80/tcp   pma
+
+```
