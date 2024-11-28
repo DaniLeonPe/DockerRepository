@@ -104,19 +104,19 @@ Se verifica el comportamiento en:
 http://localhost:8081
 
 ```
-<img src=../img/nginx1.png>
+<img src=../img/nginx1.PNG>
 
 ```code/bash/textplan/console
 http://localhost:8082
 
 ```
-<img src=../img/nginx2.png>
+<img src=../img/nginx2.PNG>
 
 ```code/bash/textplan/console
 http://localhost:82
 
 ```
-<img src=../img/nginx3.png>
+<img src=../img/nginx3.PNG>
 
 
 
@@ -138,19 +138,19 @@ volvemos a verificar el comportamiento en:
 http://localhost:8081
 
 ```
-<img src=../img/nginx4.png>
+<img src=../img/nginx4.PNG>
 
 ```code/bash/textplan/console
 http://localhost:8082
 
 ```
-<img src=../img/nginx5.png>
+<img src=../img/nginx5.PNG>
 
 ```code/bash/textplan/console
 http://localhost:82
 
 ```
-<img src=../img/nginx6.png>
+<img src=../img/nginx6.PNG>
 
 
 ### Detener y eliminar contenedores
