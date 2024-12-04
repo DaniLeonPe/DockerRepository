@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f47074cb-e286-40e2-89f7-48a7412c6e76)
+
 # Practica 6
 
 ##  Volúmenes en Docker
