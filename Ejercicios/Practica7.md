@@ -1,7 +1,7 @@
 
-# Practica 6
+# Practica 7
 
-##  Volúmenes en Docker
+##  Code, Learn & Practice(Docker: Construcción de un Dockerfile con Tomcat, MariaDB y Cliente de Base de Datos)
 
 
 ### Redes disponibles
