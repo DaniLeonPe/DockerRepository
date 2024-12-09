@@ -134,11 +134,18 @@ docker run -d -p 8080:8080 -p 8081:8081 tomcat-mariadb-cloudbeaver
 677798b4b41adb19e7e2bcd5544d463ab262afe0576a643c55ab53415ece4da0
 ```
 
+### Detener y eliminar contenedores
+Cuando termines de trabajar con CloudBeaver/MariaBD, puedes detener y eliminar el contenedor con los siguientes comandos:
+
+```code/bash/textplan/console
+docker ps
+CONTAINER ID   IMAGE                        COMMAND                  CREATED          STATUS          PORTS                                                                                                      NAMES
+595f05c4a1d1   tomcat-mariadb-cloudbeaver   "./run-server.sh /bi…"   29 seconds ago   Up 27 seconds   0.0.0.0:8080-8081->8080-8081/tcp, :::8080-8081->8080-8081/tcp, 0.0.0.0:8978->8978/tcp, :::8978->8978/tcp   funny_black
+docker stop funny_black
+funny_black
+docker rm funny_black
+funny_black
+```
 
 
 
-
-### Instalacion de los contenedores
-Se realiza nuevamente la instalacion de los contenedors y se verifica el estado de la bbdd testdb viendo que sigue estando la base de datos exactamente igual
-
-<img src=../img/vol16.PNG>
